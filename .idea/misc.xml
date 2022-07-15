@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Mobile App Development/FWD/First Part/Project/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Mobile App Development/FWD/First Part/Project/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_login.xml" value="0.23229166666666667" />
+        <entry key="..\:/Mobile App Development/FWD/First Part/Project/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_welcome.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
@@ -12,5 +14,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.23229166666666667" />
+      </ProjectState>
+    </option>
   </component>
 </project>
