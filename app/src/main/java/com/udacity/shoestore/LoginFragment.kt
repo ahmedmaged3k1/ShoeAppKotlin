@@ -43,7 +43,7 @@ class LoginFragment : Fragment() {
 
     }
     private  fun loginValidation() : Boolean{
-        if (binding.editText.text.equals(null)||binding.editText2.text.equals(null))
+        if (binding.editText.text.isEmpty()||binding.editText2.text.isEmpty())
         {
             val text = "Please Enter Email Or Password"
             val duration = Toast.LENGTH_SHORT
