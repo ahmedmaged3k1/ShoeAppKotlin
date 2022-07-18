@@ -34,7 +34,7 @@ class ShoeListFragment : Fragment() {
     private fun createViews(){
         Log.d(TAG, "createViews: tets "+viewModel.shoesList.value.toString() )
         viewModel.shoesList.observe(viewLifecycleOwner, Observer {
-            Log.d(TAG, "createViews asd: "+it.company)
+        //   Log.d(TAG, "createViews asd: "+it.)
 
         })
     }

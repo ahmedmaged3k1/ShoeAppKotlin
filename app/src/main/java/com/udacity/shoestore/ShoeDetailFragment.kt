@@ -51,7 +51,8 @@ class ShoeDetailFragment : Fragment() {
                 var shoe = Shoe(binding.editText3.text.toString(),binding.editText5.text.toString().toDouble(),
                     binding.editText4.text.toString(),binding.editText6.text.toString())
                 viewModel.addShoe(shoe)
-
+                Log.d(TAG, "buttonSaveOnClick: size  "+ (viewModel.shoesList.value?.get(0)?.company ?: 258))
+                Log.d(TAG, "buttonSaveOnClick: size  "+ viewModel.shoesArrayList.get(0).toString())
                 navigate(it)
             }
 
