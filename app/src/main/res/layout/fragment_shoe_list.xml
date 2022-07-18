@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/addShoes"
         android:layout_marginBottom="44dp"
+        android:id="@+id/addShoe"
         android:src="@drawable/ic_baseline_plus_one_24"
         app:layout_constraintBottom_toTopOf="@+id/scrollView4"
         app:layout_constraintEnd_toEndOf="parent"
