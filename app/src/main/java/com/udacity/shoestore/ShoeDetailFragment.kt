@@ -1,20 +1,19 @@
 package com.udacity.shoestore
 
-import android.content.ContentValues.TAG
+
 import android.os.Bundle
-import android.util.Log
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
-import com.udacity.shoestore.databinding.FragmentShoeListBinding
+
 import com.udacity.shoestore.models.Shoe
 
 
@@ -36,17 +35,10 @@ class ShoeDetailFragment : Fragment() {
         binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
         buttonCancelOnClick()
         buttonSaveOnClick()
-        observe()
+
         return binding.root
     }
-    private fun observe(){
 
-        viewModel.shoesList.observe(viewLifecycleOwner, Observer {
-            Log.d(TAG, "createViews asd: "+it.get(0).company)
-
-
-        })
-    }
 
     private fun buttonCancelOnClick() {
         binding.cancel.setOnClickListener {
@@ -58,11 +50,10 @@ class ShoeDetailFragment : Fragment() {
         binding.appCompatButton.setOnClickListener {
             if (shoeValidation())
             {
-                var shoe = Shoe(binding.editText3.text.toString(),binding.editText5.text.toString().toDouble(),
+                val shoe = Shoe(binding.editText3.text.toString(),binding.editText5.text.toString().toDouble(),
                     binding.editText4.text.toString(),binding.editText6.text.toString())
                 viewModel.addShoe(shoe)
-               // Log.d(TAG, "buttonSaveOnClick: size  "+ (viewModel.shoesList.value?.get(0)?.company ?: 258))
-                //Log.d(TAG, "buttonSaveOnClick: size  "+ viewModel.shoesArrayList.get(0).toString())
+
                 navigate(it)
             }
 
