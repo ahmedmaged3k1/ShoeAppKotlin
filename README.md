@@ -10,10 +10,6 @@ This project will consist of five screens. You don't have to create a shoe store
 
 ## Getting Started
 
-Open the starter project in the latest stable version of Android Studio.
-
-Open the starter project in Android Studio
-
 ##Steps
 
 1. Open the starter project in Android Studio
@@ -76,3 +72,6 @@ Open the starter project in Android Studio
     * Observe the shoes variable from the ViewModel
     * Use DataBindingUtil to inflate the shoe_list layout
     * Add a new layout item into the scrollview for each shoe.
+    
+    
+## ScreenShots
