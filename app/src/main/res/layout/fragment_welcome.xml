@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".WelcomeFragment">
-
+        <!--USED constraint  layout to give me more flexibility  than
+        linear  layout  and to use chaining    -->
 
         <TextView
             android:id="@+id/textView2"
